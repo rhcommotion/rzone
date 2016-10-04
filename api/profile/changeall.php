@@ -27,8 +27,9 @@ if (!checkdate($mm,$dd,$yyyy)) {
 }
 
 $course = implode(',',$course);
+$birthday = "$yyyy-$mm-$dd";
 
 
-$db->execute("update members set phone = '$phone', email = '$email', birthday = '$yyyy-$mm-$dd', course = '$course', year_of_study = '$year_of_study', shirt_size = '$shirt_size'  where nus_id = '$account->nus_id';");
+$db->execute("update members set phone = ?, email = ?, birthday = ?, course = ?, year_of_study = ?, shirt_size = ?  where nus_id = ?;", [$phone, $email, $birthday, $course, $year_of_study, $shirt_size, $nus_id]);
 
 ?>

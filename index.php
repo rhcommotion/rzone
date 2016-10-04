@@ -55,7 +55,7 @@ page_start();
                             </div>
                             </div>
                             </div>
-<!--                             <div class="row">
+                          <div class="row">
                             <div class="col-sm-5">
                             <div class="form-group">
                                 <input class="form-control" data-rule-digits="true" id="phone" name="phone" required type="text" value="<?php echo $account->info['phone']; ?>">
@@ -74,7 +74,7 @@ page_start();
                                 </input>
                             </div>
                             </div>
-                            </div> -->
+                            </div> 
                             <div class="row">
                             <div class="col-sm-5">
                             <div class="form-group">
@@ -208,7 +208,7 @@ page_start();
                                     T-Shirt Size
                                 </label>
                             </div>
-<!--                             <div class="form-group control-width-normal">
+                            <div class="form-group control-width-normal">
                                 <div class="input-group date" id="demo-date">
                                     <div class="input-group-content">
                                         <input class="form-control" type="text" required name="birthday" id="birthday" data-inputmask="'alias': 'date'" value="<?php echo $account->info['birthday'] !== '0000-00-00'? date("d/m/Y", strtotime($account->info['birthday'])) : ""; ?>">
@@ -223,7 +223,7 @@ page_start();
                                         </i>
                                     </span>
                                 </div>
-                            </div> -->
+                            </div>
                             <div class="checkbox checkbox-styled">
                             <label>
                                 <input type="checkbox" class="input-sm" id="pdpa">
